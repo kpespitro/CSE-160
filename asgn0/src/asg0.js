@@ -1,5 +1,6 @@
 // Ken Jacob Pespitro
 // kpespitr@ucsc.edu
+// https://kpespitro.github.io/CSE-160/asgn0/src/asg0.html 
 // DrawTriangle.js (c) 2012 matsuda
 function main() {  
   // Retrieve <canvas> element
