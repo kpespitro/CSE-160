@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Change a point color</title>
+    <title>Blocky Animal: Bunny</title>
   </head>
 
   <body onload="main()">
@@ -15,33 +15,45 @@
 
     <p id="numdot"> XXX </p>
 
-    <button type="button" id="clearButton">Clear Canvas</button>
+    Animation:
+    <button type="button" id="animationOnButton">ON</button>
+    <button type="button" id="animationOffButton">OFF</button>
     <p>
-
-    <button type="button" id="pointButton">Square</button>
-    <button type="button" id="triButton">Triangle</button>
-    <button type="button" id="circleButton">Circle</button>
-
+    Camera Angle <input type="range" min="-180" max="180" value="0" class="slider" id="angleSlide">
     <p>
-    Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlide">
+    Head <input type="range" min="-30" max="30" value="0" class="slider" id="headSlide">
     <p>
-    Green <input type="range" min="0" max="100" value="0" class="slider" id="greenSlide">
+    Left Ear <input type="range" min="-30" max="30" value="0" class="slider" id="leftEarSlide">
+    Right Ear <input type="range" min="-30" max="30" value="0" class="slider" id="rightEarSlide">
     <p>
-    Blue <input type="range" min="0" max="100" value="0" class="slider" id="blueSlide">
-
+    Front Left Leg <input type="range" min="-30" max="30" value="0" class="slider" id="frontLeftLegSlide">
+    Front Right Leg <input type="range" min="-30" max="30" value="0" class="slider" id="frontRightLegSlide">
     <p>
-    Size <input type="range" min="5" max="40" value="10" class="slider" id="sizeSlide">
+    Front Left Foot <input type="range" min="-30" max="30" value="0" class="slider" id="frontLeftFootSlide">
+    Front Right Foot <input type="range" min="-30" max="30" value="0" class="slider" id="frontRightFootSlide">
     <p>
-
-    (Circles) Segment Count <input type="range" min="3" max="60" value="10" class="slider" id="circleSegSlide">
+    Front Left Paw <input type="range" min="-30" max="30" value="0" class="slider" id="frontLeftPawSlide">
+    Front Right Paw <input type="range" min="-30" max="30" value="0" class="slider" id="frontRightPawSlide">
     <p>
+    Back Left Leg <input type="range" min="-30" max="30" value="0" class="slider" id="backLeftLegSlide">
+    Back Right Leg <input type="range" min="-30" max="30" value="0" class="slider" id="backRightLegSlide">
+    <p>
+    Back Left Foot <input type="range" min="-30" max="30" value="0" class="slider" id="backLeftFootSlide">
+    Back Right Foot <input type="range" min="-30" max="30" value="0" class="slider" id="backRightFootSlide">
+    <p>
+    Back Left Paw <input type="range" min="-30" max="30" value="0" class="slider" id="backLeftPawSlide">
+    Back Right Paw <input type="range" min="-30" max="30" value="0" class="slider" id="backRightPawSlide">
+    <p>
+      
     <script src="lib/webgl-utils.js"></script>
     <script src="lib/webgl-debug.js"></script>
     <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
     <script src="BlockyAnimal.js"></script>
     <script src="Point.js"></script>
     <script src="Triangle.js"></script>
     <script src="Circle.js"></script>
     <script src="Cube.js"></script>
+    <script src="Cylinder.js"></script>
   </body>
 </html>
