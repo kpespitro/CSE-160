@@ -1,0 +1,61 @@
+<!-- Ken Jacob Pespitro -->
+ <!-- kpespitr@ucsc.edu -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blocky Animal: Bunny</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>
+
+    <p id="numdot"> XXX </p> 
+    
+    <div id="controls">
+      <h3>Controls</h3>
+      <div class="control-row">
+        <span><span class="key">W</span> Move forward</span>
+        <span><span class="key">S</span> Move backward</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">A</span> Move left</span>
+        <span><span class="key">D</span> Move right</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">Q</span> Pan left</span>
+        <span><span class="key">E</span> Pan right</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">Mouse drag</span> Look around</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">Tab</span> Toggle EXPLORE / EDIT mode</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">F</span> Add block (EDIT mode only)</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">R</span> Remove block (EDIT mode only)</span>
+      </div>
+      <div class="control-row">
+        <span> Chase and catch the bunny to win!</span>
+      </div>
+    </div>
+      
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="Camera.js"></script>
+    <script src="World.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cylinder.js"></script>
+  </body>
+</html>
