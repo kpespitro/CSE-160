@@ -1,0 +1,98 @@
+<!-- Ken Jacob Pespitro -->
+ <!-- kpespitr@ucsc.edu -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blocky Animal: Bunny</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>
+
+    <p id="numdot"> XXX </p> 
+
+    Look around to find the sphere! (Hint: in the middle of the map and floating)
+
+    <p>
+
+    <button id="normalVisOffButton">Normals: OFF</button>
+    <button id="normalVisOnButton">Normals: ON</button>
+
+    <p>
+    
+    <label>Light X: <input type="range" id="lightXSlide" min="0" max="31" value="16" step="0.1"></label>
+    <label>Light Y: <input type="range" id="lightYSlide" min="-2" max="10" value="2" step="0.1"></label>
+    <label>Light Z: <input type="range" id="lightZSlide" min="0" max="31" value="16" step="0.1"></label>
+    
+    <p>
+
+    <button id="lightAnimOnButton">Light Anim: ON</button>
+    <button id="lightAnimOffButton">Light Anim: OFF</button>
+
+    <p>
+
+    <label>Light R: <input type="range" id="lightRSlide" min="0" max="1" value="1" step="0.01"></label>
+    <label>Light G: <input type="range" id="lightGSlide" min="0" max="1" value="1" step="0.01"></label>
+    <label>Light B: <input type="range" id="lightBSlide" min="0" max="1" value="1" step="0.01"></label>
+
+    <p>
+
+    <button id="lightingOnButton">Lighting: ON</button>
+    <button id="lightingOffButton">Lighting: OFF</button>
+
+    <p>
+
+    <button id="spotlightOnButton">Spotlight: ON</button>
+    <button id="spotlightOffButton">Spotlight: OFF</button>
+    <label>Spotlight Angle: <input type="range" id="spotAngleSlide" min="5" max="60" value="15" step="1"></label>
+
+    <div id="controls">
+      <h3>Controls</h3>
+      <div class="control-row">
+        <span><span class="key">W</span> Move forward</span>
+        <span><span class="key">S</span> Move backward</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">A</span> Move left</span>
+        <span><span class="key">D</span> Move right</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">Q</span> Pan left</span>
+        <span><span class="key">E</span> Pan right</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">Mouse drag</span> Look around</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">Tab</span> Toggle EXPLORE / EDIT mode</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">F</span> Add block (EDIT mode only)</span>
+      </div>
+      <div class="control-row">
+        <span><span class="key">R</span> Remove block (EDIT mode only)</span>
+      </div>
+      <div class="control-row">
+        <span> Chase and catch the bunny to win!</span>
+      </div>
+    </div>
+      
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Lighting.js"></script>
+    <script src="Model.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cylinder.js"></script>
+    <script src="Sphere.js"></script>
+  </body>
+</html>
