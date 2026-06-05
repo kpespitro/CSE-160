@@ -1,0 +1,50 @@
+<!-- Ken Jacob Pespitro -->
+ <!-- kpespitr@ucsc.edu -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>First Three.js</title>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@v0.184.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.184.0/examples/jsm/"
+      }
+    }
+    </script>
+    <style>
+      body { margin: 0; overflow: hidden; }
+
+      canvas { display: block; }
+
+      #controls-hint {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-family: sans-serif;
+        font-size: 14px;
+        line-height: 1.8;
+        pointer-events: none;
+      }
+
+      #controls-hint p { margin: 0; }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="webgl"></canvas>
+
+    <div id="controls-hint">
+    <p>🖱️ Left drag — orbit</p>
+    <p>🖱️ Right drag — pan</p>
+    <p>🖱️ Scroll — zoom</p>
+  </div>
+
+    <script type="module" src="asgn5.js"></script>
+  </body>
+</html>
